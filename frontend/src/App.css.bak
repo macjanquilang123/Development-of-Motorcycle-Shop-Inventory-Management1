@@ -1,0 +1,178 @@
+/* Add this to your global CSS */
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1050;
+}
+
+.modal-content {
+  background: #fff;
+  border-radius: 0.5rem;
+  padding: 2rem;
+  max-width: 600px;
+  width: 100%;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+.login-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; /* Full viewport height */
+  background-color: #f8f9fa; /* Light gray background */
+}
+
+/* Login Card */
+.login-card {
+  width: 100%;
+  max-width: 400px; /* Limit the card width */
+  border-radius: 0.5rem; /* Rounded corners */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  background-color: #fff; /* White background */
+  padding: 2rem;
+}
+
+/* Card Body */
+.login-card .card-body {
+  padding: 1.5rem;
+}
+
+/* Login Title */
+.login-card h2 {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #6c757d; /* Secondary text color */
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+
+/* Form Labels */
+.login-card .form-label {
+  font-weight: 600; /* Semi-bold */
+  color: #6c757d; /* Secondary text color */
+  margin-bottom: 0.5rem;
+}
+
+/* Input Fields */
+.login-card .form-control {
+  border: 1px solid #ced4da; /* Light gray border */
+  border-radius: 0.25rem; /* Slightly rounded corners */
+  padding: 0.5rem 0.75rem;
+  font-size: 1rem;
+  color: #495057; /* Darker text color */
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.login-card .form-control:focus {
+  border-color: #007bff; /* Blue border on focus */
+  box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25); /* Blue shadow on focus */
+  outline: none;
+}
+
+/* Submit Button */
+.login-card .btn-primary {
+  background-color: #007bff; /* Primary blue */
+  border: none;
+  color: #fff; /* White text */
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  font-weight: bold;
+  border-radius: 0.25rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+  width: 100%; /* Full width button */
+}
+
+.login-card .btn-primary:hover {
+  background-color: #0056b3; /* Darker blue on hover */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow on hover */
+}
+
+.login-card .btn-primary:focus {
+  outline: none;
+  box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.5); /* Blue shadow on focus */
+}
+
+/* Error Message (Optional) */
+.login-card .error-message {
+  color: #dc3545; /* Red text for errors */
+  font-size: 0.875rem;
+  margin-top: 0.5rem;
+}
+
+/* General style for all side menu items */
+.side-menu__item {
+  background: none;
+  border: none;
+  color: #000; /* Default font color */
+  text-align: left;
+  width: 100%;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Hover effect for all side menu items */
+.side-menu__item:hover {
+  background-color: #889097; /* Hover background color */
+  color: #fff; /* Hover font color */
+  border-radius: 0; /* Remove corner radius on hover */
+}
+
+/* Focus effect for accessibility */
+.side-menu__item:focus {
+  outline: none;
+}
+
+.main-sidebar {
+  overflow: visible !important;
+}
+
+.app-sidebar {
+  height: 100vh; /* Full viewport height */
+}
+
+/* Style for the logout button in the sidebar footer */
+.sidebar-footer .logout-button {
+  background: none;
+  border: none;
+  color: #000000; /* Match the text color of other menu items */
+  text-align: left;
+  width: 100%;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  transition: background-color 0.3s ease;
+}
+
+.sidebar-footer {
+  display: block !important;
+  position: absolute !important;
+  bottom: 0 !important;
+  width: 100% !important;
+  height: 50px !important;
+}
+
+/* Ensure hover effect applies to all side menu items */
+.main-menu .side-menu__item:hover,
+.sidebar-footer .logout-button:hover {
+  background-color: #b8bfc5; /* Hover background color */
+  color: #fff; /* Hover font color */
+  border-radius: 0; /* Remove corner radius on hover */
+}
+
+.sidebar-footer .logout-button:focus {
+  outline: none;
+}
