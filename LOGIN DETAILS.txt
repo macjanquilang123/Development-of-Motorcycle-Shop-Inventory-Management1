@@ -19,4 +19,4 @@ terminal: cd backend
 
 **Login Details**
 Username: admin
-Password: 12345
+Password: 123456
